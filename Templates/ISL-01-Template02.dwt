@@ -70,10 +70,10 @@
               <i class="fas fa-calendar-alt">地區盛會</i>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../TGE-310-SeasonalEvent.html">當季盛會</a>
-              <a class="dropdown-item" href="../TGE-320-YilanFestival.html">宜蘭節慶</a>
-              <a class="dropdown-item" href="../TGE-330-HualienFestival.html">花蓮節慶</a>
-              <a class="dropdown-item" href="../TGE-340-TaitungFestival.html">台東節慶</a>
+              <a class="dropdown-item" href="../ISL-310-SeasonalEvent.html">當季盛會</a>
+              <a class="dropdown-item" href="../ISL-320-YilanFestival.html">金門節慶</a>
+              <a class="dropdown-item" href="../ISL-330-HualienFestival.html">馬祖節慶</a>
+              <a class="dropdown-item" href="../ISL-340-TaitungFestival.html">澎湖節慶</a>
             </div>
           </li>
           <li class="nav-item dropdown">
