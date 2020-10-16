@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/ISL-01-Template01.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>智慧導遊: 離島盛會</title>
+  <meta name="description" content="Seasonal Event">
+  <!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+  <!-- Vue實例的掛載點 -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user">用戶登入</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">網站資訊</a>
+              <a class="dropdown-item" href="ISL-120-SignIn.html">登入註冊</a>
+              <a class="dropdown-item" href="ISL-130-Message.html">用戶留言</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-suitcase">旅遊導覽</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ISL-210-Location.html">地理位置</a>
+              <a class="dropdown-item" href="ISL-220-TravelGuide.html">旅行導遊</a>
+              <a class="dropdown-item" href="ISL-230-Transportation.html">交通資訊</a>
+              <a class="dropdown-item" href="ISL-240-TravelAgent.html">旅遊達人</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-calendar-alt">地區景點</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ISL-310-SeasonalEvent.html">當季盛會</a>
+              <a class="dropdown-item" href="ISL-320-KinmenAttractions.html">金門景點</a>
+              <a class="dropdown-item" href="ISL-330-MatsuAttractions.html">馬祖景點</a>
+              <a class="dropdown-item" href="ISL-340-PenghuAttractions.html">澎湖景點</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-hot-tub">旅館住宿</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ISL-410-HotelRanking.html">旅館排名</a>
+              <a class="dropdown-item" href="ISL-420-BandBRanking.html">民宿排名</a>
+              <a class="dropdown-item" href="ISL-430-FeaturedHotel.html">特色旅館</a>
+              <a class="dropdown-item" href="ISL-440-FeaturedBandB.html">特色民宿</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-utensils">特色餐飲</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ISL-510-FoodIntroduction.html">美食介紹</a>
+              <a class="dropdown-item" href="ISL-520-RestaurantRanking.html">餐廳排名</a>
+              <a class="dropdown-item" href="ISL-530-FeaturedRestaurant.html">特色餐廳</a>
+              <a class="dropdown-item" href="ISL-540-Souvenirs.html">伴手禮品</a>
+            </div>
+          </li>
+		  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-camera-retro">經驗分享</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ISL-610-TravelBlog.html">旅遊札記</a>
+              <a class="dropdown-item" href="ISL-620-TravelReport.html">深度報導</a>
+              <a class="dropdown-item" href="ISL-630-LandscapePhotos.html">風景照片</a>
+              <a class="dropdown-item" href="ISL-640-Travelvlog.html">影像紀錄</a>
+            </div>
+          </li>
+
+        </ul>
+        <form class="form-inline my-1 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Jumbotron-->
+    <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+        <div class="container">
+          <!-- InstanceBeginEditable name="jumbotron description " -->
+            <div class="bg-lighter p-1" style="width:300px">
+              <h4 class="text-white" >離島盛會</h4>
+              <p class="lead text-white">不能錯過的離島盛會</p>
+            </div>
+        <!-- InstanceEndEditable --> </div>
+    </div>
+
+	<!-- Web Page Title -->
+	<!-- InstanceBeginEditable name="main_heading" -->
+	<h2 id="main_heading"> 當季盛會 </h2>
+	<!-- InstanceEndEditable -->
+	  
+	<!-- Vue實例的掛載點 -->
+    <!-- InstanceBeginEditable name="main_content" -->
+
+	<main>
+        <div class="row mx-1">
+          <div class="col-md-3 col-lg-2">
+            <aside class="sidebar1">
+              	<h5>地區分類</h5>
+
+
+				<div class="list-group" id="MenuList" role="tablist">
+				  <a href="#Article-01" class="list-group-item list-group-item-action active" data-toggle="list">匯總</a>
+				  <a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">金門</a>
+				  <a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">馬祖</a>
+				  <a href="#Article-04" class="list-group-item list-group-item-action" data-toggle="list">澎湖</a>
+				</div>
+			</aside>
+          </div>
+          <div class="col-md-9 col-lg-10">
+            <div class="tab-content">
+
+            <!-- Articla 01-->
+              <div class="tab-pane active" id="Article-01" role="tabpanel">
+                <article>
+                  <h5>匯總</h5>
+                  <div>
+ 					Insert islands summary here
+                  </div>
+         
+                </article>
+              </div>
+
+              <!-- Articla 02-->
+              <div class="tab-pane" id="Article-02" role="tabpanel">
+                <article>
+                  <h5>金門</h5>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						金門坑道音樂節 2020<br>
+							<ul>
+								<li>
+									活動日期 2020-11-07~2020-11-08
+								</li>
+								<li>
+									活動地點 893 金門縣金城鎮翟山坑道
+								</li>
+							</ul>
+							今年金門坑道音樂節的兩大主題為【希望】和【祈福】，邀請揚名國際的韓國聲樂家丁一憲、女高音蔣啟真、口琴世界大賽第一名的音樂家李讓，結合藝術總監大提琴家張正傑率領的弦外之音室內樂集，包括知名小提琴家林天吉、小提琴家陳依廷、中提琴家康郁理參與演出。
+							<br>
+							弦樂四重奏是西方古典音樂中最有深度的形式，每每在坑道音樂節中將觀眾無限的期待轉化為極大的感動，四種弦樂器的聲響在坑道中相互交融，將室內樂的精緻與美感做最佳的呈現。兩天演出分別搭配人聲、口琴，將呈現給觀眾截然不同的風味。有別於以往，今年另一大亮點是演奏平台將由禮洋花藝的新銳設計師榮孝洋特別設計，在有限的舞台空間裡以花藝裝飾，帶給觀眾欣欣向榮的希望。
+							
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						活動預告<br>
+							<img src="fig/ISL-3101-SesonalEvent-01.jpg" class="img-fluid" style="width:600px">
+							
+						</div>						
+					</div>
+					
+				</article>
+              </div>
+
+              <!-- Articla 03-->
+              <div class="tab-pane " id="Article-03" role="tabpanel">
+                <article>
+                  <h5>馬祖</h5>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+						吹響馬祖-阿道夫公益樂團演出<br>
+							<ul>
+								<li>
+									時間：2020/10/11 19:00-21:00
+								</li>
+								<li>
+									地點：介壽澳口公園(白馬王公園)
+								</li>
+							</ul>
+							阿道夫公益樂團成立3年來全台已經義演超過上百場次，主要理念是用音樂來溫暖社會上各個需要溫暖的地方。台灣藝文與教育發展協會是目前台灣規模最大、最具廣泛影響力的藝術團體之一，會旨在成為海內外文藝界的橋樑和紐帶，為中華文化大發展、大繁榮、社會文化貢獻重要力量。
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							活動錄影<br>
+							
+							<video class="img-fluid" width="600" height="400" controls >
+								<source src="fig/ISL-3101-SesonalEvent-92.mp4" type=video/mp4>
+								<source src="fig/ISL-3101-SesonalEvent-92.ogg" type=video/ogg>								
+							</video>						
+						</div>						
+					</div>
+
+                </article>
+              </div>
+
+              <!-- Articla 04-->
+              <div class="tab-pane " id="Article-04" role="tabpanel">
+                <article>
+                  <h5>澎湖</h5>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							澎湖國際海上花火節 2020<br>
+							<ul>
+								<li>
+									活動日期：2020年7月6日至2020年9月3日
+								</li>
+								<li>
+									活動地點：主場地馬公市觀音亭園區
+								</li>
+								<li>
+									觀音亭場次煙火施放時間為 21：00
+								</li>
+								<li>
+									離島場次（吉貝、七美、望安）煙火施放時間為 20：00
+								</li>								
+							</ul>
+							自第一屆「澎湖海上花火節」於2003年開始，便持續舉辦至今，這要細說自2002年發生於澎湖外海的華航空難，因重創了澎湖觀光產業，澎湖縣政府為了振興，便在該年農曆七夕與華航合作辦活動「千萬風情在菊島」，由華航空姐與空少變裝演出，火紅蓬裙配上婀娜多姿的身材，大秀「紅磨坊」火辣舞蹈，加上半小時左右的高空煙火秀，引起熱烈迴響，因此隔年第一屆「澎湖海上花火節」誕生，一年接著一年，如今成為全台經典活動之一。
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							2020 花火節錄影<br>
+							<video class="img-fluid" width="600" height="400" controls >
+								<source src="fig/ISL-3101-SesonalEvent-91.mp4" type=video/mp4>
+								<source src="fig/ISL-3101-SesonalEvent-91.ogg" type=video/ogg>								
+							</video>							
+						
+						</div>						
+					</div>
+
+                </article>
+              </div>				
+				
+	          <!-- Next Aritical -->	
+				
+            </div>
+
+
+          </div>
+
+        </div>
+
+    </main>
+		
+
+    <!-- InstanceEndEditable -->
+	
+	<footer id="main_footer">
+		<p id="p-footer">
+				&copy;智慧導遊-離島：金門，馬祖，澎湖
+		</p>
+
+	</footer>
+	
+	<!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- InstanceBeginEditable name="vue control program" -->
+    <div>
+      <!-- Vue實例的程式碼 -->
+    </div>
+    <!-- InstanceEndEditable -->
+</body>
+
+<!-- InstanceEnd --></html>

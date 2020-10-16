@@ -1,530 +1,617 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/ISL-01-Template01.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/ISL-01-Template01.dwt" codeOutsideHTMLIsLocked="false" -->
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Bootstrap 4 CSS 的 CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <!-- Fontawesom 的 CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <!-- Google Icons CDN  -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Bootstrap 4 CSS 的 CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- Fontawesom 的 CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- Google Icons CDN  -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-  <!-- My CSS file -->
-  <link rel="stylesheet" href="css/mycss.css">
-  <!-- InstanceBeginEditable name="doctitle" -->
-  <title>智慧導遊：離島 交通</title>
-  <meta name="description" content="Transportation">
-  <!-- InstanceEndEditable -->
+	<!-- My CSS file -->
+	<link rel="stylesheet" href="css/mycss.css">
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>智慧導遊：離島 交通</title>
+	<meta name="description" content="Transportation">
+	<!-- InstanceEndEditable -->
 
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+	<!-- InstanceBeginEditable name="head" -->
+	<!-- InstanceEndEditable -->
 </head>
 
 <body>
-  <!-- Vue實例的掛載點 -->
+	<!-- Vue實例的掛載點 -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<a class="navbar-brand" href="#">
 
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user">用戶登入</i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="index.html">網站資訊</a>
-              <a class="dropdown-item" href="ISL-120-SignIn.html">登入註冊</a>
-              <a class="dropdown-item" href="ISL-130-Message.html">用戶留言</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-suitcase">旅遊導覽</i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="ISL-210-Location.html">地理位置</a>
-              <a class="dropdown-item" href="ISL-220-TravelGuide.html">旅行導遊</a>
-              <a class="dropdown-item" href="ISL-230-Transportation.html">交通資訊</a>
-              <a class="dropdown-item" href="ISL-240-TravelAgent.html">旅遊達人</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-calendar-alt">地區景點</i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="ISL-310-SeasonalEvent.html">當季盛會</a>
-              <a class="dropdown-item" href="ISL-320-KinmenAttractions.html">金門景點</a>
-              <a class="dropdown-item" href="ISL-330-MatsuAttractions.html">馬祖景點</a>
-              <a class="dropdown-item" href="ISL-340-PenghuAttractions.html">澎湖景點</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-hot-tub">旅館住宿</i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="ISL-410-HotelRanking.html">旅館排名</a>
-              <a class="dropdown-item" href="ISL-420-BandBRanking.html">民宿排名</a>
-              <a class="dropdown-item" href="ISL-430-FeaturedHotel.html">特色旅館</a>
-              <a class="dropdown-item" href="ISL-440-FeaturedBandB.html">特色民宿</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-utensils">特色餐飲</i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="ISL-510-FoodIntroduction.html">美食介紹</a>
-              <a class="dropdown-item" href="ISL-520-RestaurantRanking.html">餐廳排名</a>
-              <a class="dropdown-item" href="ISL-530-FeaturedRestaurant.html">特色餐廳</a>
-              <a class="dropdown-item" href="ISL-540-Souvenirs.html">伴手禮品</a>
-            </div>
-          </li>
-		  <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-camera-retro">經驗分享</i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="ISL-610-TravelBlog.html">旅遊札記</a>
-              <a class="dropdown-item" href="ISL-620-TravelReport.html">深度報導</a>
-              <a class="dropdown-item" href="ISL-630-LandscapePhotos.html">風景照片</a>
-              <a class="dropdown-item" href="ISL-640-Travelvlog.html">影像紀錄</a>
-            </div>
-          </li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-user">用戶登入</i>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="index.html">網站資訊</a>
+						<a class="dropdown-item" href="ISL-120-SignIn.html">登入註冊</a>
+						<a class="dropdown-item" href="ISL-130-Message.html">用戶留言</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-suitcase">旅遊導覽</i>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="ISL-210-Location.html">地理位置</a>
+						<a class="dropdown-item" href="ISL-220-TravelGuide.html">旅行導遊</a>
+						<a class="dropdown-item" href="ISL-230-Transportation.html">交通資訊</a>
+						<a class="dropdown-item" href="ISL-240-TravelAgent.html">旅遊達人</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-calendar-alt">地區景點</i>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="ISL-310-SeasonalEvent.html">當季盛會</a>
+						<a class="dropdown-item" href="ISL-320-KinmenAttractions.html">金門景點</a>
+						<a class="dropdown-item" href="ISL-330-MatsuAttractions.html">馬祖景點</a>
+						<a class="dropdown-item" href="ISL-340-PenghuAttractions.html">澎湖景點</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-hot-tub">旅館住宿</i>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="ISL-410-HotelRanking.html">旅館排名</a>
+						<a class="dropdown-item" href="ISL-420-BandBRanking.html">民宿排名</a>
+						<a class="dropdown-item" href="ISL-430-FeaturedHotel.html">特色旅館</a>
+						<a class="dropdown-item" href="ISL-440-FeaturedBandB.html">特色民宿</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-utensils">特色餐飲</i>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="ISL-510-FoodIntroduction.html">美食介紹</a>
+						<a class="dropdown-item" href="ISL-520-RestaurantRanking.html">餐廳排名</a>
+						<a class="dropdown-item" href="ISL-530-FeaturedRestaurant.html">特色餐廳</a>
+						<a class="dropdown-item" href="ISL-540-Souvenirs.html">伴手禮品</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-camera-retro">經驗分享</i>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="ISL-610-TravelBlog.html">旅遊札記</a>
+						<a class="dropdown-item" href="ISL-620-TravelReport.html">深度報導</a>
+						<a class="dropdown-item" href="ISL-630-LandscapePhotos.html">風景照片</a>
+						<a class="dropdown-item" href="ISL-640-Travelvlog.html">影像紀錄</a>
+					</div>
+				</li>
 
-        </ul>
-        <form class="form-inline my-1 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+			</ul>
+			<form class="form-inline my-1 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
 
-    <!-- Jumbotron-->
-    <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
-        <div class="container">
-          <!-- InstanceBeginEditable name="jumbotron description " -->
-            <div class="bg-lighter p-1" style="width:300px">
-              <h4 class="text-white" >離島的交通</h4>
-              <p class="lead text-white">航空與海運</p>
-            </div>
-        <!-- InstanceEndEditable --> </div>
-    </div>
+	<!-- Jumbotron-->
+	<div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+		<div class="container">
+			<!-- InstanceBeginEditable name="jumbotron description " -->
+			<div class="bg-lighter p-1" style="width:300px">
+				<h4 class="text-white">離島的交通</h4>
+				<p class="lead text-white">航空與海運</p>
+			</div>
+			<!-- InstanceEndEditable -->
+		</div>
+	</div>
 
 	<!-- Web Page Title -->
 	<!-- InstanceBeginEditable name="main_heading" -->
 	<h2 id="main_heading">離島交通運輸</h2>
 	<!-- InstanceEndEditable -->
-	  
+
 	<!-- Vue實例的掛載點 -->
-    <!-- InstanceBeginEditable name="main_content" -->
+	<!-- InstanceBeginEditable name="main_content" -->
 
 	<main>
-        <div class="row mx-1">
-          <div class="col-md-3 col-lg-2">
-            <aside class="sidebar1">
-              	<h5>離島分類</h5>
+		<div class="row mx-1">
+			<div class="col-md-3 col-lg-2">
+				<aside class="sidebar1">
+					<h5>離島分類</h5>
 
 
-				<div class="list-group" id="MenuList" role="tablist">
-				  <a href="#Article-01" class="list-group-item list-group-item-action active" data-toggle="list">郵輪跳島</a>
-				  <a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">金門</a>
-				  <a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">馬祖</a>
-				  <a href="#Article-04" class="list-group-item list-group-item-action" data-toggle="list">澎湖</a>
+					<div class="list-group" id="MenuList" role="tablist">
+						<a href="#Article-01" class="list-group-item list-group-item-action active"
+							data-toggle="list">郵輪跳島</a>
+						<a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">金門</a>
+						<a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">馬祖</a>
+						<a href="#Article-04" class="list-group-item list-group-item-action" data-toggle="list">澎湖</a>
+					</div>
+				</aside>
+			</div>
+			<div class="col-md-9 col-lg-10">
+				<div class="tab-content">
+
+					<!-- Articla 01-->
+					<div class="tab-pane active" id="Article-01" role="tabpanel">
+						<article>
+							<h5>防疫期間 郵輪跳島 旅遊專案</h5>
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+									<video class="img-fluid" width="600" height="400" controls >
+										<source src="fig/ISL-2303-DreamCruise-91.mp4" type=video/mp4>
+										<source src="fig/ISL-2303-DreamCruise-91.ogg" type=video/ogg>								
+									</video>
+									<br>
+									<ul>
+										<li>
+											探索夢號 Dream Cruises <a
+												href="https://us.dreamcruiseline.com/swift/cruise?siid=261233&lang=18&_ga=2.203280401.1070324309.1602848353-1394436603.1601904258&_gac=1.153805642.1602848498.CjwKCAjwiaX8BRBZEiwAQQxGxyFTy-L8lpfo-mb2H36Tow8X0rOnoVHRhjuAtKAnPCE9qJaNSNl1pRoCE2sQAvD_BwE">官網</a>
+										</li>
+										<li>
+											星夢郵輪:
+
+											<a
+												href="https://www.dreamcruiseline.com/zh-tw/plan-your-holiday/first-time-cruiser-guide/?gclid=CjwKCAjwiaX8BRBZEiwAQQxGxyFTy-L8lpfo-mb2H36Tow8X0rOnoVHRhjuAtKAnPCE9qJaNSNl1pRoCE2sQAvD_BwE&gclsrc=aw.ds">新手導覽</a>
+
+										</li>
+										<li>
+											<a href="file/ISL-905-探索夢號-船書.pdf">探索夢號-船書</a>
+										</li>
+									</ul>
+								
+									星夢郵輪 探索夢號 郵輪跳島 2020 旅遊方案
+									<ul>
+										<li>
+											方案1: 基隆/台南/澎湖/高雄/花蓮 6日：2020 10/25, 11/01, 11/08, 11/22 (週日出發)
+										</li>
+										<li>
+											方案2: 基隆/澎湖/金門/花蓮 5日：2020 10/18 (週日出發)
+										</li>
+										<li>
+											方案3: 基隆/澎湖/高雄/花蓮 5日: 2020 11/15 (週日出發)
+										</li>
+										<li>
+											方案4: 基隆/高雄/花蓮 4日：2020 10/22 (週四出發)
+										</li>
+										<li>
+											方案5: 基隆/花蓮 3日：2020 10/16, 10/30, 11/06, 11/13, 11:20 (週五出發)
+										</li>
+									</ul>
+									<br>
+
+									<br>
+								</div>
+								<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+									探索夢號 價格表 （打折後）：
+									<table width=90%>
+										<tr>
+											<th>房型</th>
+											<th>6日</th>
+											<th>5日</th>
+											<th>4日</th>
+											<th>3日</th>
+										</tr>
+										<tr>
+											<td>皇宮庭院別墅</td>
+											<td>54,800</td>
+											<td>44,200</td>
+											<td>35,200</td>
+											<td>25,100</td>
+										</tr>
+										<tr>
+											<td>皇宮行政套房</td>
+											<td>45,300</td>
+											<td>36,400</td>
+											<td>28,900</td>
+											<td>20,800</td>
+										</tr>
+										<tr>
+											<td>皇宮豪華套房</td>
+											<td>36,900</td>
+											<td>29,900</td>
+											<td>23,200</td>
+											<td>18,500</td>
+										</tr>
+										<tr>
+											<td>皇宮套房</td>
+											<td>28,500</td>
+											<td>22,500</td>
+											<td>17,900</td>
+											<td>14,100</td>
+										</tr>
+										<tr>
+											<td>露台客房</td>
+											<td>15,700</td>
+											<td>12,400</td>
+											<td>9,800</td>
+											<td>6,600</td>
+										</tr>
+										<tr>
+											<td>海景客房</td>
+											<td>11,800</td>
+											<td>9,600</td>
+											<td>7,500</td>
+											<td>5,300</td>
+										</tr>
+										<tr>
+											<td>舷窗客房</td>
+											<td>9,900</td>
+											<td>8,100</td>
+											<td>6,600</td>
+											<td>4,700</td>
+										</tr>
+										<tr>
+											<td>內側客房</td>
+											<td>9,200</td>
+											<td>7,700</td>
+											<td>6,100</td>
+											<td>4,400</td>
+										</tr>
+									</table>
+									<br>
+									<div id="carouselExampleIndicators-11" class="carousel slide img-fluid"
+										data-ride="carousel" style="width:600px">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="0"
+												class="active">
+											</li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="fig/ISL-2303-DreamCruise-01.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/ISL-2303-DreamCruise-02.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/ISL-2303-DreamCruise-03.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/ISL-2303-DreamCruise-04.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/ISL-2303-DreamCruise-05.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/ISL-2303-DreamCruise-06.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/ISL-2303-DreamCruise-07.png" class="d-block w-100"
+													alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="fig/ISL-2303-DreamCruise-08.png" class="d-block w-100"
+													alt="...">
+											</div>
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators-11"
+											role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators-11"
+											role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+
+						</article>
+					</div>
+
+					<!-- Articla 02-->
+					<div class="tab-pane" id="Article-02" role="tabpanel">
+						<article>
+							<h5>金門</h5>
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-6">
+									金門航運圖
+									<img src="fig/ISL-2301-Transportation-11.jpg" class="img-fluid" style="width:800px">
+								</div>
+								<div class="col-12 col-sm-12 col-md-6">
+									航空公司：
+									UNI AIR <a href="https://www.uniair.com.tw/rwd/index.aspx">立榮航空</a>，
+									Mandarin Airline<a href="https://www.mandarin-airlines.com/">華信航空</a>
+									航班資訊：
+									<table width="90%">
+										<tr>
+											<th>站別</th>
+											<th>頻率</th>
+											<th>飛行時間</th>
+											<th>價格</th>
+										</tr>
+										<tr>
+											<td>台北-金門</td>
+											<td>每日 班</td>
+											<td>55分鐘</td>
+											<td>NT</td>
+										</tr>
+										<tr>
+											<td>台中-金門</td>
+											<td>每日 班</td>
+											<td>50分鐘</td>
+											<td>NT</td>
+										</tr>
+										<tr>
+											<td>嘉義-金門</td>
+											<td>每日 班</td>
+											<td>50分鐘</td>
+											<td>NT</td>
+										</tr>
+										<tr>
+											<td>台南-金門</td>
+											<td>每日 班</td>
+											<td>50分鐘</td>
+											<td>NT</td>
+										</tr>
+										<tr>
+											<td>高雄-金門</td>
+											<td>每日 班</td>
+											<td>55分鐘</td>
+											<td>NT</td>
+										</tr>
+										<tr>
+											<td>澎湖-金門</td>
+											<td>每日 班</td>
+											<td>40分鐘</td>
+											<td>NT</td>
+										</tr>
+									</table>
+
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<!-- Articla 03-->
+					<div class="tab-pane " id="Article-03" role="tabpanel">
+						<article>
+							<h5>馬祖</h5>
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-6">
+									馬祖航運圖
+									<img src="fig/ISL-2301-Transportation-21.png" class="img-fluid" style="width:800px">
+								</div>
+								<div class="col-12 col-sm-12 col-md-6">
+									航空公司：
+									UNI AIR <a href="https://www.uniair.com.tw/rwd/index.aspx">立榮航空</a>
+									航班資訊：
+									<table width="90%">
+										<tr>
+											<th>站別</th>
+											<th>頻率</th>
+											<th>飛行時間</th>
+											<th>價格</th>
+										</tr>
+										<tr>
+											<td>松山-南竿</td>
+											<td>每日6班</td>
+											<td>50分鐘</td>
+											<td>NT2,007</td>
+										</tr>
+										<tr>
+											<td>松山-北竿</td>
+											<td>每日3班</td>
+											<td>50分鐘</td>
+											<td>NT2,007</td>
+										</tr>
+										<tr>
+											<td>台中-南竿</td>
+											<td>每日1班</td>
+											<td>75分鐘</td>
+											<td>NT2,455</td>
+										</tr>
+									</table>
+									<br>
+									船海運
+
+									<table width="90%">
+										<tr>
+											<th>站別</th>
+											<th>頻率</th>
+											<th>航行時間</th>
+											<th>價格</th>
+										</tr>
+										<tr>
+											<td>基隆港-東引</td>
+											<td>每日 班</td>
+											<td>8 - 13.5小時</td>
+											<td>NT980</td>
+										</tr>
+										<tr>
+											<td>基隆港-南竿</td>
+											<td>每日 班</td>
+											<td>9 - 10.5小時</td>
+											<td>NT980</td>
+										</tr>
+
+									</table>
+
+								</div>
+							</div>
+
+						</article>
+					</div>
+
+					<!-- Articla 04-->
+					<div class="tab-pane " id="Article-04" role="tabpanel">
+						<article>
+							<h5>澎湖</h5>
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-6">
+									澎湖航運圖
+									<img src="fig/ISL-2301-Transportation-31.jpg" class="img-fluid" style="width:800px">
+								</div>
+								<div class="col-12 col-sm-12 col-md-6">
+									航空公司：
+									UNI AIR <a href="https://www.uniair.com.tw/rwd/index.aspx">立榮航空</a>，
+									Mandarin Airline<a href="https://www.mandarin-airlines.com/">華信航空</a>
+
+									航班資訊：
+									<table width="90%">
+										<tr>
+											<th>站別</th>
+											<th>頻率</th>
+											<th>飛行時間</th>
+											<th>價格</th>
+										</tr>
+										<tr>
+											<td>台北-馬公</td>
+											<td>每日 班</td>
+											<td>50分鐘</td>
+											<td>NT3,901</td>
+										</tr>
+										<tr>
+											<td>台中-馬公</td>
+											<td>每日 班</td>
+											<td>40分鐘</td>
+											<td>NT3,141</td>
+										</tr>
+										<tr>
+											<td>嘉義-馬公</td>
+											<td>每日 班</td>
+											<td>30分鐘</td>
+											<td>NT3,165</td>
+										</tr>
+										<tr>
+											<td>台南-馬公</td>
+											<td>每日 班</td>
+											<td>30分鐘</td>
+											<td>NT3,104</td>
+										</tr>
+										<tr>
+											<td>高雄-馬公</td>
+											<td>每日 班</td>
+											<td>45分鐘</td>
+											<td>NT3,288</td>
+										</tr>
+									</table>
+									<br>
+									船海運
+
+									<table width="90%">
+										<tr>
+											<th>站別</th>
+											<th>頻率</th>
+											<th>航行時間</th>
+											<th>價格</th>
+										</tr>
+										<tr>
+											<td>台中台中港-澎湖</td>
+											<td>每日 班</td>
+											<td>2.5小時</td>
+											<td>NT2,500</td>
+										</tr>
+										<tr>
+											<td>嘉義布袋港-澎湖</td>
+											<td>每日 班</td>
+											<td>75分鐘 - 1.5小時</td>
+											<td>NT1,950</td>
+										</tr>
+										<tr>
+											<td>高雄高雄港-澎湖</td>
+											<td>每日 班</td>
+											<td>日航4小時，夜航6-6.5小時</td>
+											<td>NT1,548</td>
+										</tr>
+
+									</table>
+
+								</div>
+							</div>
+
+						</article>
+					</div>
+
+					<!-- Next Aritical -->
+
 				</div>
-			</aside>
-          </div>
-          <div class="col-md-9 col-lg-10">
-            <div class="tab-content">
-
-            <!-- Articla 01-->
-              <div class="tab-pane active" id="Article-01" role="tabpanel">
-                <article>
-                  <h5>防疫期間 郵輪跳島 旅遊專案</h5>
- 					<div class="row">
-						<div class="col-12 col-sm-12 col-md-6">
-						星夢郵輪 探索夢號 郵輪跳島
-							<ul>
-								<li>
-									基隆/台南/澎湖/高雄/花蓮 6日：2020 10/25, 11/01, 11/08, 11/22 (週日)
-								</li>
-								<li>
-									基隆/澎湖/金門/花蓮 5日：2020 10/18 (週日)
-								</li>
-								<li>
-									基隆/澎湖/高雄/花蓮 5日: 2020 11/15 (週日)
-								</li>
-								<li>
-									基隆/高雄/花蓮 4日：2020 10/22 (週四)
-								</li>
-								<li>
-									基隆/花蓮 3日：2020 10/16, 10/30, 11/06, 11/13, 11:20 (週五)
-								</li>
-							</ul>
-						<br>
-						價格表：
-							<table width=90%>
-								<tr>
-									<th>房型</th>									
-									<th>6日</th>
-									<th>5日</th>
-									<th>4日</th>
-									<th>3日</th>
-								</tr>
-								<tr>
-									<td>皇宮庭院別墅</td>
-									<td>54,800</td>
-									<td>44,200</td>
-									<td>35,200</td>
-									<td>25,100</td>
-								</tr>
-								<tr>
-									<td>皇宮行政套房</td>
-									<td>45,300</td>
-									<td>36,400</td>
-									<td>28,900</td>
-									<td>20,800</td>
-								</tr>	
-								<tr>
-									<td>皇宮豪華套房</td>
-									<td>36,900</td>
-									<td>29,900</td>
-									<td>23,200</td>
-									<td>18,500</td>
-								</tr>
-								<tr>
-									<td>皇宮套房</td>
-									<td>28,500</td>
-									<td>22,500</td>
-									<td>17,900</td>
-									<td>14,100</td>
-								</tr>		
-								<tr>
-									<td>露台客房</td>
-									<td>15,700</td>
-									<td>12,400</td>
-									<td>9,800</td>
-									<td>6,600</td>
-								</tr>
-								<tr>
-									<td>海景客房</td>
-									<td>11,800</td>
-									<td>9,600</td>
-									<td>7,500</td>
-									<td>5,300</td>
-								</tr>	
-								<tr>
-									<td>舷窗客房</td>
-									<td>9,900</td>
-									<td>8,100</td>
-									<td>6,600</td>
-									<td>4,700</td>
-								</tr>
-								<tr>
-									<td>內側客房</td>
-									<td>9,200</td>
-									<td>7,700</td>
-									<td>6,100</td>
-									<td>4,400</td>
-								</tr>									
-							</table>
-							
-							
-						</div>
-						<div class="col-12 col-sm-12 col-md-6">
-							<img src="fig/ISL-2301-Transportation-02.jpg" class="img-fluid" style="width:800px">
-						</div>						
-					</div>
-         
-                </article>
-              </div>
-
-              <!-- Articla 02-->
-              <div class="tab-pane" id="Article-02" role="tabpanel">
- 				<article>
-                  <h5>金門</h5>
-					<div class="row">
-						<div class="col-12 col-sm-12 col-md-6">
-						金門航運圖
-							<img src="fig/ISL-2301-Transportation-11.jpg" class="img-fluid" style="width:800px">
-						</div>
-						<div class="col-12 col-sm-12 col-md-6">
-						航空公司：
-							UNI AIR <a href="https://www.uniair.com.tw/rwd/index.aspx">立榮航空</a>，
-							Mandarin Airline<a href="https://www.mandarin-airlines.com/">華信航空</a>
-						航班資訊：	
-							<table width="90%" >
-								<tr>
-									<th>站別</th>
-									<th>頻率</th>
-									<th>飛行時間</th>
-									<th>價格</th>
-								</tr>
-								<tr>
-									<td>台北-金門</td>
-									<td>每日 班</td>
-									<td>55分鐘</td>
-									<td>NT</td>
-								</tr>
-								<tr>
-									<td>台中-金門</td>
-									<td>每日 班</td>
-									<td>50分鐘</td>
-									<td>NT</td>
-								</tr>
-								<tr>
-									<td>嘉義-金門</td>
-									<td>每日 班</td>
-									<td>50分鐘</td>
-									<td>NT</td>
-								</tr>	
-								<tr>
-									<td>台南-金門</td>
-									<td>每日 班</td>
-									<td>50分鐘</td>
-									<td>NT</td>
-								</tr>
-								<tr>
-									<td>高雄-金門</td>
-									<td>每日 班</td>
-									<td>55分鐘</td>
-									<td>NT</td>
-								</tr>
-								<tr>
-									<td>澎湖-金門</td>
-									<td>每日 班</td>
-									<td>40分鐘</td>
-									<td>NT</td>
-								</tr>									
-							</table>							
-							
-						</div>					
-					</div>
-				</article>
-              </div>
-
-              <!-- Articla 03-->
-              <div class="tab-pane " id="Article-03" role="tabpanel">
-                <article>
-                  <h5>馬祖</h5>
-					<div class="row">
-						<div class="col-12 col-sm-12 col-md-6">
-						馬祖航運圖
-							<img src="fig/ISL-2301-Transportation-21.png" class="img-fluid" style="width:800px">
-						</div>
-						<div class="col-12 col-sm-12 col-md-6">
-						航空公司：
-							UNI AIR <a href="https://www.uniair.com.tw/rwd/index.aspx">立榮航空</a>
-						航班資訊：
-							<table width="90%" >
-								<tr>
-									<th>站別</th>
-									<th>頻率</th>
-									<th>飛行時間</th>
-									<th>價格</th>
-								</tr>
-								<tr>
-									<td>松山-南竿</td>
-									<td>每日6班</td>
-									<td>50分鐘</td>
-									<td>NT2,007</td>
-								</tr>
-								<tr>
-									<td>松山-北竿</td>
-									<td>每日3班</td>
-									<td>50分鐘</td>
-									<td>NT2,007</td>
-								</tr>
-								<tr>
-									<td>台中-南竿</td>
-									<td>每日1班</td>
-									<td>75分鐘</td>
-									<td>NT2,455</td>
-								</tr>								
-							</table>
-						<br>
-						船海運
-
-							<table width="90%" >
-									<tr>
-										<th>站別</th>
-										<th>頻率</th>
-										<th>航行時間</th>
-										<th>價格</th>
-									</tr>
-									<tr>
-										<td>基隆港-東引</td>
-										<td>每日 班</td>
-										<td>8 - 13.5小時</td>
-										<td>NT980</td>
-									</tr>
-									<tr>
-										<td>基隆港-南竿</td>
-										<td>每日 班</td>
-										<td>9 - 10.5小時</td>
-										<td>NT980</td>
-									</tr>
-
-								</table>								
-							
-						</div>					
-					</div>
-
-                </article>
-              </div>
-
-              <!-- Articla 04-->
-              <div class="tab-pane " id="Article-04" role="tabpanel">
-                <article>
-                  <h5>澎湖</h5>
-					<div class="row">
-						<div class="col-12 col-sm-12 col-md-6">
-							澎湖航運圖
-								<img src="fig/ISL-2301-Transportation-31.jpg" class="img-fluid" style="width:800px">
-						</div>
-						<div class="col-12 col-sm-12 col-md-6">
-							航空公司：
-								UNI AIR <a href="https://www.uniair.com.tw/rwd/index.aspx">立榮航空</a>，
-								Mandarin Airline<a href="https://www.mandarin-airlines.com/">華信航空</a>	
-							
-							航班資訊：	
-								<table width="90%" >
-									<tr>
-										<th>站別</th>
-										<th>頻率</th>
-										<th>飛行時間</th>
-										<th>價格</th>
-									</tr>
-									<tr>
-										<td>台北-馬公</td>
-										<td>每日 班</td>
-										<td>50分鐘</td>
-										<td>NT3,901</td>
-									</tr>
-									<tr>
-										<td>台中-馬公</td>
-										<td>每日 班</td>
-										<td>40分鐘</td>
-										<td>NT3,141</td>
-									</tr>
-									<tr>
-										<td>嘉義-馬公</td>
-										<td>每日 班</td>
-										<td>30分鐘</td>
-										<td>NT3,165</td>
-									</tr>	
-									<tr>
-										<td>台南-馬公</td>
-										<td>每日 班</td>
-										<td>30分鐘</td>
-										<td>NT3,104</td>
-									</tr>
-									<tr>
-										<td>高雄-馬公</td>
-										<td>每日 班</td>
-										<td>45分鐘</td>
-										<td>NT3,288</td>
-									</tr>
-								</table>	
-							<br>
-							船海運
-
-							<table width="90%" >
-									<tr>
-										<th>站別</th>
-										<th>頻率</th>
-										<th>航行時間</th>
-										<th>價格</th>
-									</tr>
-									<tr>
-										<td>台中台中港-澎湖</td>
-										<td>每日 班</td>
-										<td>2.5小時</td>
-										<td>NT2,500</td>
-									</tr>
-									<tr>
-										<td>嘉義布袋港-澎湖</td>
-										<td>每日 班</td>
-										<td>75分鐘 - 1.5小時</td>
-										<td>NT1,950</td>
-									</tr>
-									<tr>
-										<td>高雄高雄港-澎湖</td>
-										<td>每日 班</td>
-										<td>日航4小時，夜航6-6.5小時</td>
-										<td>NT1,548</td>
-									</tr>	
-
-								</table>	
-							
-						</div>					
-					</div>
-
-                </article>
-              </div>				
-				
-	          <!-- Next Aritical -->	
-				
-            </div>
 
 
-          </div>
+			</div>
 
-        </div>
+		</div>
 
-    </main>
-		
+	</main>
 
-    <!-- InstanceEndEditable -->
-	
+
+	<!-- InstanceEndEditable -->
+
 	<footer id="main_footer">
 		<p id="p-footer">
-				&copy;智慧導遊-離島：金門，馬祖，澎湖
+			&copy;智慧導遊-離島：金門，馬祖，澎湖
 		</p>
 
 	</footer>
-	
-	<!-- Vue 的 CDN -->
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
-    <!-- Bootstrap 4 JavaScript 的 CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"></script>
-    <!-- Axios 的 CDN -->
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- InstanceBeginEditable name="vue control program" -->
-    <div>
-      <!-- Vue實例的程式碼 -->
-    </div>
-    <!-- InstanceEndEditable -->
+	<!-- Vue 的 CDN -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+	<!-- Bootstrap 4 JavaScript 的 CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+	<!-- Axios 的 CDN -->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<!-- InstanceBeginEditable name="vue control program" -->
+	<div>
+		<!-- Vue實例的程式碼 -->
+	</div>
+	<!-- InstanceEndEditable -->
 </body>
 
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+
+</html>
