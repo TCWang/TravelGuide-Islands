@@ -1,0 +1,57 @@
+﻿[
+        {
+            "NO": "01",
+            "Name": "福朋喜來登酒店",
+            "Category": "澎湖",
+            "Island": "馬公市",
+            "Price": "NT 3,568",
+            "Address": "澎湖縣馬公市新店路197號",
+            "Tel": "06-926-6288",
+            "Figure": "fig/ISL-4131-PenghuHotel-01.jpg",
+            "Link": "https://www.fourpoints-penghu.com/"
+        },
+        {
+            "NO": "02",
+            "Name": "澎澄飯店",
+            "Category": "澎湖",
+            "Island": "馬公市",
+            "Price": "NT 2,919",
+            "Address": "澎湖縣馬公市同和路168號",
+            "Tel": "06-923-5678",
+            "Figure": "fig/ISL-4131-PenghuHotel-04.jpg",
+            "Link": "https://www.discoveryhotel.com.tw/"
+        },
+        {
+            "NO": "03",
+            "Name": "雅霖大飯店",
+            "Category": "澎湖",
+            "Island": "馬公市",
+            "Price": "NT 1,955",
+            "Address": "澎湖縣馬公市同和路100號\r\n",
+            "Tel": "06-9261366",
+            "Figure": "fig/ISL-4131-PenghuHotel-05.jpg",
+            "Link": "http://yl.fkgroup.com.tw/"
+        },
+        {
+            "NO": "04",
+            "Name": "海悅飯店",
+            "Category": "澎湖",
+            "Island": "馬公市",
+            "Price": "NT 2,157",
+            "Address": "澎湖縣馬公市民福路75號",
+            "Tel": "06-926-9166",
+            "Figure": "fig/ISL-4131-PenghuHotel-02.jpg",
+            "Link": "https://www.haiyue.ool.com.tw/zh/company.html"
+        },
+        {
+            "NO": "05",
+            "Name": "和田大飯店",
+            "Category": "澎湖",
+            "Island": "馬公市",
+            "Price": "NT 2,125",
+            "Address": "澎湖縣馬公市民權路2號",
+            "Tel": "06-926-3936",
+            "Figure": "fig/ISL-4131-PenghuHotel-03.jpg",
+            "Link": "https://www.bbnet.com.tw/mhotel/reserve/"
+        }
+    ]

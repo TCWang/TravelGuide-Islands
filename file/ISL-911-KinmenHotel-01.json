@@ -1,0 +1,58 @@
+﻿[
+        {
+            "NO": "01",
+            "Name": "金湖飯店",
+            "Category": "金門",
+            "Island": "金湖鎮",
+            "Price": "NT 5,175",
+            "Address": "金門縣金湖鎮太湖路二段218號",
+            "Tel": "082-338-688",
+            "Figure": "fig/ISL-4111-KinmenHotel-01.jpg",
+            "Link": "https://www.goldenlakehotel.com/TC/main.php?lg=T"
+        },
+        {
+            "NO": "02",
+            "Name": "金金禮寓",
+            "Category": "金門",
+            "Island": "金湖鎮",
+            "Price": "NT 2,116",
+            "Description": "金門唯一精品公寓式酒店，於2020年全新落成，首創全金門超大客房設計，提供五星等級的客房禮賓服務",
+            "Address": "金門縣金湖鎮市港五路150號",
+            "Tel": "082-334-746",
+            "Figure": "fig/ISL-4111-KinmenHotel-02.jpg",
+            "Link": "https://www.solishotel.com.tw/"
+        },
+        {
+            "NO": "03",
+            "Name": "金沙湖畔渡假會館",
+            "Category": "金門",
+            "Island": "金沙鎮",
+            "Price": "NT 1,482",
+            "Address": "金門縣金沙鎮后浦頭142號",
+            "Tel": "082-355-888",
+            "Figure": "fig/ISL-4111-KinmenHotel-03.jpg",
+            "Link": "http://www.jinsahotel.com.tw/about/"
+        },
+        {
+            "NO": "04",
+            "Name": "海福商務飯店",
+            "Category": "金門",
+            "Island": "金城鎮",
+            "Price": "NT 2,226",
+            "Address": "金門縣金城鎮民權路85號",
+            "Tel": "082-322-538",
+            "Figure": "fig/ISL-4111-KinmenHotel-04.jpg",
+            "Link": "https://www.haifu.com.tw/"
+        },
+        {
+            "NO": "05",
+            "Name": "IN99精品旅館",
+            "Category": "金門",
+            "Island": "金城鎮",
+            "Price": "NT 1,656",
+            "Address": "金門縣金城鎮民生路16號",
+            "Tel": "082-324-851",
+            "Figure": "fig/ISL-4111-KinmenHotel-05.jpg",
+            "Link": "https://www.in99hotel.com/"
+        }
+    ]
