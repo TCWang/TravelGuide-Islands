@@ -176,10 +176,40 @@
               <div class="tab-pane active" id="Article-01" role="tabpanel">
                 <article>
                   <h5>大金門</h5>
-                  <div>
-						<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1L5fyAC7qOznYLdU32rQFTzUjy272gYks" width="800" height="600"></iframe>
-                  </div>
-         
+					  <div>
+							<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1L5fyAC7qOznYLdU32rQFTzUjy272gYks" width="600" height="400"></iframe>
+					  </div>
+					大金門景點匯總：
+					  <div id="app1" class="row" v-for="posts in results">
+						<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4" v-for="post in posts">
+						  <div class="card">
+							<div class="card-header">
+							  <a v-bind:href="post.Link">
+								{{ post.Name }}
+							  </a>
+							</div>
+							<div class="card-body">
+							  <p class="card-text">
+							  <dl>
+
+								<dd>鄉鎮：{{post.Island}}</dd>
+								<dd>電話：{{post.Tel}} </dd>
+								<dd>地址：{{post.Address}} </dd>
+								<dd>開放時間：{{post.Hours}}</dd>
+								<dd>旅遊時間：{{post.Tour}} </dd>
+							  </dl>
+							  <img v-bind:src="post.Figure" class="img-fluid">
+								<p>
+									<br>
+									{{post.Description}}
+								</p>
+
+							  </p>
+							</div>
+						  </div>
+						</div>
+					  </div>         			
+					
                 </article>
               </div>
 
@@ -245,7 +275,122 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- InstanceBeginEditable name="vue control program" -->
     <div>
-      <!-- Vue實例的程式碼 -->
+		<!-- Vue實例的程式碼 -->
+		<script>
+		  const posts = []
+		  const SECTIONS_GM1 = "金門"
+		  const SECTIONS_GM2 = "小金門"
+		  const SECTIONS_GM3 = "烏坵"		  
+
+		  new Vue({
+			el: '#app1',
+			data: {
+			  posts,
+			  // results: [],
+			  sections: SECTIONS_GM1.split(', '),
+			  section: '金門'
+			},
+			filter: {
+			  formatted(value) {
+				return ' 以下是 ${value} 類別的貼文 '
+			  }
+			},
+
+			computed: {
+			  results() {
+				let posts = this.posts
+				  .slice()
+				  .filter(post => post.Category === this.section)
+				let i, j, chunkedArray = [], chunk = 20;
+				for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+				  chunkedArray[j] = posts.slice(i, i + chunk);
+				}
+				return chunkedArray
+			  }
+			},
+
+			mounted() {
+			  axios.get('file/ISL-907-KinmenGuide-01.json').then((response) => {
+				this.posts = response.data;
+				this.getPostsByCategory(this.section)
+			  }).catch(error => { console.log(error); });
+			},
+
+		  });		  
+		  
+		  new Vue({
+			el: '#app2',
+			data: {
+			  posts,
+			  // results: [],
+			  sections: SECTIONS_GM2.split(', '),
+			  section: '小金門'
+			},
+			filter: {
+			  formatted(value) {
+				return ' 以下是 ${value} 類別的貼文 '
+			  }
+			},
+
+			computed: {
+			  results() {
+				let posts = this.posts
+				  .slice()
+				  .filter(post => post.Category === this.section)
+				let i, j, chunkedArray = [], chunk = 20;
+				for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+				  chunkedArray[j] = posts.slice(i, i + chunk);
+				}
+				return chunkedArray
+			  }
+			},
+
+			mounted() {
+			  axios.get('file/ISL-907-KinmenGuide-02.json').then((response) => {
+				this.posts = response.data;
+				this.getPostsByCategory(this.section)
+			  }).catch(error => { console.log(error); });
+			},
+
+		  });
+			
+		  new Vue({
+			el: '#app3',
+			data: {
+			  posts,
+			  // results: [],
+			  sections: SECTIONS_GM3.split(', '),
+			  section: '烏坵'
+			},
+			filter: {
+			  formatted(value) {
+				return ' 以下是 ${value} 類別的貼文 '
+			  }
+			},
+
+			computed: {
+			  results() {
+				let posts = this.posts
+				  .slice()
+				  .filter(post => post.Category === this.section)
+				let i, j, chunkedArray = [], chunk = 20;
+				for (i = 0, j = 0; i < posts.length; i += chunk, j++) {
+				  chunkedArray[j] = posts.slice(i, i + chunk);
+				}
+				return chunkedArray
+			  }
+			},
+
+			mounted() {
+			  axios.get('file/ISL-907-KinmenGuide-03.json').then((response) => {
+				this.posts = response.data;
+				this.getPostsByCategory(this.section)
+			  }).catch(error => { console.log(error); });
+			},
+
+		  });				
+			
+		</script>	
     </div>
     <!-- InstanceEndEditable -->
 </body>

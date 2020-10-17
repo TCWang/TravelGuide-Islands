@@ -1,0 +1,74 @@
+﻿[
+        {
+            "NO": "01",
+            "Name": "雙心石滬",
+            "Category": "澎湖",
+            "Island": "七美鄉",
+            "Description": "雙心石滬是澎湖地區眾多石滬中，保留最完整的石滬，若要觀看雙心石滬必須先確認每日的退潮時間，才能順利看到完整的石滬雙心形狀。",
+            "Address": "地址\r\n澎湖縣七美鄉雙心石滬",
+            "Tel": "\r\n+886-6-9972154",
+            "Hours": "24小時",
+            "Figure": "fig/ISL-3411-Penghu-01.jpg",
+            "Link": "https://www.penghu-nsa.gov.tw/TravelInformationSceneryDetailC001200.aspx?Cond=a98c092b-65f5-4b7e-bbb3-de16bf9be2cf&Keyword=%E9%9B%99%E5%BF%83%E7%9F%B3%E6%BB%AC&SortType=1&SearchAdvanced=False&Language=1028"
+        },
+        {
+            "NO": "02",
+            "Name": "大菓葉柱狀玄武岩",
+            "Category": "澎湖",
+            "Island": "西嶼鄉",
+            "Description": "日治時期為聯絡馬公與西嶼間的海上交通，在大菓葉海邊闢建碼頭，挖取石塊泥土時意外地發掘了這片埋於土中、沈睡千年的壯麗柱狀玄武岩，可謂澎湖本島容易親近的柱狀玄武岩。",
+            "Address": "澎湖縣西嶼鄉池東村10號",
+            "Tel": "+886-6-9216521",
+            "Hours": "24小時",
+            "Figure": "fig/ISL-3411-Penghu-02.jpg",
+            "Link": "https://www.penghu-nsa.gov.tw/TravelInformationSceneryDetailC001200.aspx?Cond=d04d4a89-9d51-495a-a317-2aa1c00ea0e7&Keyword=%e5%a4%a7%e8%8f%93%e8%91%89%e6%9f%b1%e7%8b%80%e7%8e%84%e6%ad%a6%e5%b2%a9&SortType=1&SearchAdvanced=False&Language=1028"
+        },
+        {
+            "NO": "03",
+            "Name": "風櫃洞",
+            "Category": "澎湖",
+            "Island": "馬公市",
+            "Description": "「風櫃聽濤」-來聽海哭的聲音，由於玄武地形與海浪侵蝕形成了海蝕洞景觀，隨著浪潮拍打，洞內空氣受到擠壓，因此發出了呼嘯的聲音，千萬別錯過大自然特殊的景致。",
+            "Address": "\r\n澎湖縣馬公市風櫃里風櫃",
+            "Tel": " +886-6-9216521",
+            "Hours": "24小時",
+            "Figure": "fig/ISL-3411-Penghu-03.jpg",
+            "Link": "https://www.penghu-nsa.gov.tw/TravelInformationSceneryDetailC001200.aspx?Cond=c4139bcf-f1d4-4b50-919f-3afaeafd5f3a&Keyword=%e9%a2%a8%e6%ab%83%e6%b4%9e&SortType=1&SearchAdvanced=False&Language=1028"
+        },
+        {
+            "NO": "04",
+            "Name": "奎壁山（摩西分海）",
+            "Category": "澎湖",
+            "Island": "湖西鄉",
+            "Description": "許多地質景點須在退潮時才能觀賞，尤其想體驗摩西分海-奎壁山地質公園，更要注意漲退潮時間，並注意政府相關規定。",
+            "Address": "澎湖縣湖西鄉北寮村",
+            "Tel": "\r\n +886-6-9216521",
+            "Hours": "24小時",
+            "Figure": "fig/ISL-3411-Penghu-04.jpg",
+            "Link": "https://www.penghu-nsa.gov.tw/TravelInformationSceneryDetailC001200.aspx?Cond=0947d150-504e-425c-9920-cd5fa2652527&Keyword=%e5%8c%97%e5%af%ae&SortType=1&SearchAdvanced=False&Language=1028"
+        },
+        {
+            "NO": "05",
+            "Name": "吉貝嶼",
+            "Category": "澎湖",
+            "Island": "白沙鄉",
+            "Description": "吉貝嶼全島面積約3.1平方公里，海岸線長約13公里，是北海最大的島嶼，國內最熱門的旅遊景點。全島地勢東高西低，由海積地形組成的美麗沙灘及沙嘴，為本島最大的地形特色。",
+            "Address": "澎湖縣白沙鄉吉貝嶼",
+            "Tel": " +886-6-9933082",
+            "Hours": "24小時",
+            "Figure": "fig/ISL-3411-Penghu-05.jpg",
+            "Link": "https://www.penghu-nsa.gov.tw/TravelInformationSceneryDetailC001200.aspx?Cond=1b4a87a6-6631-4e9b-b305-ecacd2f00364&Keyword=%e5%90%89%e8%b2%9d&SortType=1&SearchAdvanced=False&Language=1028"
+        },
+        {
+            "NO": "06",
+            "Name": "澎湖跨海大橋",
+            "Category": "澎湖",
+            "Island": "白沙鄉",
+            "Description": "澎湖跨海大橋是澎湖的地標，是來澎湖遊客非留影不可的拍照景點之一，把『澎湖』二字拍攝在照片裡，證明來過澎湖，一直是遊客最想做的事情之一。",
+            "Address": "澎湖縣白沙鄉通西嶼鄉橋樑",
+            "Tel": " +886-6-9216521",
+            "Hours": "24小時",
+            "Figure": "fig/ISL-3411-Penghu-06.jpg",
+            "Link": "https://www.penghu-nsa.gov.tw/TravelInformationSceneryDetailC001200.aspx?Cond=bcd530cb-32e6-4b7a-ae23-9c30a6877edd&Keyword=%e8%b7%a8%e6%b5%b7&SortType=1&SearchAdvanced=False&Language=1028"
+        }
+    ]
