@@ -122,15 +122,18 @@
     </nav>
 
     <!-- Jumbotron-->
-    <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+	  <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
         <div class="container">
           <!-- TemplateBeginEditable name="jumbotron description " -->
+
             <div class="bg-lighter p-1" style="width:300px">
               <h4 class="text-white" >Insert jumbotron title here</h4>
               <p class="lead text-white">Insert jumbotron description here</p>
             </div>
-        <!-- TemplateEndEditable --> </div>
-    </div>
+
+        <!-- TemplateEndEditable --> 
+		</div>
+	</div>
 
 	<!-- Web Page Title -->
 	<!-- TemplateBeginEditable name="main_heading" -->
