@@ -75,7 +75,12 @@ img {
 	background-position: center center;
 	min-height: 300px
 }
-
+.jumbotron-bg6 {
+	background-image: url("../fig/ISL-1001-MazuBanner-06.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height: 300px
+}
 .navbar{
     background-color:#000066 !important;
 }
