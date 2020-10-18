@@ -8,134 +8,43 @@ body {
         "Helvetica Neue", sans-serif; //備援字體
     */
 }
-#app footer {
+#AlignR {
+    text-align: right;
+    margin-left: 20px;
 }
-article {
-    padding: 0 5px 2px 5px;
-    margin: 0 5px 2px 5px;
-}
-#main_heading {
+.row {
     margin-top: 0;
-    margin-right: 2px;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    padding: 0 5px 2px 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
-footer {
-    margin-top: 10px;
+#NoMargin {
+    margin: 0 -2px 0 -2px;
 }
-.row #Header1 {
-    padding-left: 10px;
+section article div {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
 }
-
-@media (max-width:543px) {
-    h1, h2 {font-size:1.0rem;}
-    h3, h4 {font-size:0.8rem;}
-    h5, h6 {font-size:0.6rem;}
+section article img {
+    width: 400px;
 }
-@media (min-width:544px) {
-    h1, h2 {font-size:1.0rem;}
-    h3, h4 {font-size:0.8rem;}
-    h5, h6 {font-size:0.6rem;}
+img {
+    margin: 1px 1px 0 0;
 }
-@media (min-width:768px) {
-    h1, h2 {font-size:1.2rem;}
-    h3, h4 {font-size:1.0rem;}
-    h5, h6 {font-size:0.8rem;}
+.box {
+    height: 50px;
 }
-@media (min-width:992px) {
-    h1, h2 {font-size:1.6rem;}
-    h3, h4 {font-size:1.4rem;}
-    h5, h6 {font-size:1.2rem;}
-}
-@media (min-width:1200px) {
-    h1, h2 {font-size:1.6rem;}
-    h3, h4 {font-size:1.4rem;}
-    h5, h6 {font-size:1.2rem;}
+#FloatR {
+    float: right;
 }
 
-.navbar{
-    background-color:#000066 !important;
-}
-.navbar .navbar-toggler {
-    background-color: white !important;
-}
-.navbar .collapse .navbar-nav li a{
-    color:white !important;
-}
-.navbar .collapse .navbar-nav li a:hover{
-    color: #33FFCC !important;
-    background-color:#0066FF;
-}
-.navbar .collapse .navbar-nav li .dropdown-menu .dropdown-item {
-    color:#660033 !important;
-}
-.navbar .collapse .navbar-nav li .dropdown-menu .dropdown-item:hover {
-    color:#CC0033 !important;
-    background-color:#D0D0D0 !important;
-}
-
-.navbar .navbar-brand {
-    color: yellow !important;
-}
-
-.page-footer{
-    background-color: #0066FF !important;
-}
-#main_footer {
-    padding: 0 5px 0 10px;
-    background-color: #006;
-}
-#p-footer {
-    color: #FFF;
-}
-#app footer {
-    background-color: #006;
-    color: #000;
-}
-#main_heading {
-    padding: 0 5px 0 5px;
-}
-#app footer p {
-    color: #FFF;
-}
-
-#title-1 {
-    color: #0000CC;
-    font-size:1.4em;
-}
-#title-2 {
-    color: #0000CC;
-    font-size:1.2em;
-}
-h1, h2 {
-    color: #0000CC;
-    font-size:1.6em;
-}
-h3, h4 {
-    color: #0000CC;
-    font-size:1.4em;
-}
-h5 {
-    color:#0000CC;
-    font-size:1.2em;
-}
-div.fixed {
-    position: fixed;
-    top: 40px;
-    left: 100px;
-    color: #000099;
-    background: rgba(255, 255, 255, 0.7)
-}
-.btn-circle{
-    width: 30px;
-    height: 30px;
-    padding: 6px 0px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.42857;
-}
 .jumbotron-bg1 {
 	background-image: url("../fig/ISL-1001-MazuBanner-01.jpg");
 	background-size: cover;
@@ -166,6 +75,84 @@ div.fixed {
 	background-position: center center;
 	min-height: 300px
 }
-.bg-lighter {
-		background-color: rgba(0,0,0,.4)
+
+.navbar{
+    background-color:#000066 !important;
+}
+.navbar .navbar-toggler {
+    background-color: white !important;
+}
+.navbar .collapse .navbar-nav li a{
+    color:white !important;
+}
+.navbar .collapse .navbar-nav li a:hover{
+    color: #33FFCC !important;
+    background-color:#0066FF;
+}
+.navbar .collapse .navbar-nav li .dropdown-menu .dropdown-item {
+    color:#660033 !important;
+}
+.navbar .collapse .navbar-nav li .dropdown-menu .dropdown-item:hover {
+    color:#CC0033 !important;
+    background-color:#D0D0D0 !important;
+}
+
+.navbar .navbar-brand {
+    color: yellow !important;
+}
+
+.page-footer{
+    background-color:#000066 !important;
+}
+
+#title-1 {
+    color: #0000CC;
+    font-size:1.4em;
+}
+#title-2 {
+    color: #0000CC;
+    font-size:1.2em;
+}
+h1, h2 {
+    color: #0000CC;
+    font-size:1.2em;
+}
+h3, h4 {
+    color: #0000CC;
+    font-size: 1.1em;
+}
+h5,h6 {
+    color: #0000CC;
+    font-size: 1.em;
+    font-size: 1em;
+    margin-top: 2px;
+}
+.container .bg-lighter h5 {
+    color: #FFF;
+}
+.container .bg-lighter p {
+    color: #FFF;
+}
+div.fixed {
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    color: #000099;
+    background: rgba(255, 255, 255, 0.7)
+}
+.btn-circle{
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 3px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+#main_footer {
+	    background-color:#000066 !important;
+	    color: #FFF;
 }
